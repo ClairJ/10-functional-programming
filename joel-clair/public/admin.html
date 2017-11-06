@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lab 10</title>
-    <link rel="stylesheet" href="/vendor/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/icons.css">
-    <link rel="stylesheet" href="/styles/base.css">
-    <link rel="stylesheet" href="/styles/layout.css">
-    <link rel="stylesheet" href="/styles/modules.css">
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
     <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
     <!-- DONE: Setup a template for each row of the Author Stats section of this page: -->
-    <script type="text/javascript" id="admin-template">
+    <script type="text/x-handlebars-template" id="admin-template">
     <li><h2> Author: {{author}}</h2></li>
     <li><h2> WordCount: {wordCount}</h2></li>
 
@@ -51,8 +51,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-    <script src="/scripts/article.js"></script>
-    <script src="/scripts/articleView.js"></script>
+    <script src="scripts/article.js"></script>
+    <script src="scripts/articleView.js"></script>
     <!-- DONE: Due to changes in article.js and articleView.js to attach their interior objects to a global 'app' object, we need to make changes to the contents of the following <script> tag: -->
     <script>
       // DONE: After we fetch and load all the articles, what view function do we want to run next?
