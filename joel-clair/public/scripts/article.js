@@ -36,7 +36,7 @@ var app = app || {};
     /* OLD forEach():
     rawData.forEach(articleObject => Article.all.push(new Article(articleObject)))
     */
-    Article.all = rawData.map(articleObject => Article.all(new Article(articleObject)))
+    Article.all = rawData.map(articleObject => new Article(articleObject))
 
   };
 
@@ -120,5 +120,5 @@ var app = app || {};
       .then(console.log)
       .then(callback);
   };
-  module.Article;
+  module.Article = Article;
 })(app);
